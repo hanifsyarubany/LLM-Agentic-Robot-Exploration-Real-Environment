@@ -1,4 +1,4 @@
-# LLM-Agentic Exploration Robot (Real-World) — Navigation + Object Pickup
+# LLM-Based Agentic Exploration in Real Environment
 
 This repository contains the **real-environment** implementation of our **LLM-based agentic exploration** system for a mobile manipulator robot that navigates a corridor-style “shopping” layout, builds/uses semantic cues (e.g., store icons / signboards / AprilTags), and executes **end-to-end tasks from user instruction to object pickup**.
 
