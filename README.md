@@ -115,7 +115,7 @@ python3 cmd_vel_to_velocity.py
 python3 kinematics_demo.py
 ```
 
-#### **2) Jetson Nano Setup (Perception + Policy) **
+#### **2) Jetson Nano Setup (Perception + Policy)**
 ###### (a) ROS Master
 ```bash
 roscore
