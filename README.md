@@ -57,6 +57,9 @@ The system is modular: high-level decisions (LLM policy) trigger low-level ROS â
 - Modular ROS nodes (navigation primitives + grasping routines)
 - Two-compute ROS networking (Jetson â†” ArmPi)
 
+**LLM**
+- constrained high-level policy over the semantic map
+
 ---
 
 ## Running the Real Robot System
