@@ -83,3 +83,30 @@ python3 cmd_vel_to_velocity.py
 # Arm + gripper control (predefined grasp sequences) -> run this in a new terminal
 python3 kinematics_demo.py
 ```
+
+#### **2) Jetson Nano Setup (Perception + Policy) **
+###### (a) ROS Master
+```bash
+roscore
+```
+###### (b) Convert YOLO .pt → TensorRT .engine
+```bash
+yolo export model=YOLO_Models/yolo_realsense.pt format=engine imgsz=640 half=True
+yolo export model=YOLO_Models/yolo_usb.pt      format=engine imgsz=640 half=True
+```
+###### (c) Run YOLO pipelines
+```bash
+# 1st terminal
+python3 YOLO_Pipelines/yolo_realsense_camera.py
+# 2nd terminal
+python3 YOLO_Pipelines/yolo_usb_camera.py
+```
+###### (d) Main navigation / decision stack
+```bash
+cd catkin_ws
+rm -rf build devel
+catkin_make
+source devel/setup.bash
+roslaunch main_simulator main_launcher.launch 
+roslaunch robot_controller main_controller.launch # separate terminal
+```
