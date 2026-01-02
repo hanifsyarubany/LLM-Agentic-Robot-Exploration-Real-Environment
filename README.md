@@ -92,7 +92,7 @@ roscore
 ###### (b) Convert YOLO .pt → TensorRT .engine
 ```bash
 yolo export model=YOLO_Models/yolo_realsense.pt format=engine imgsz=640 half=True
-yolo export model=YOLO_Models/yolo_usb.pt      format=engine imgsz=640 half=True
+yolo export model=YOLO_Models/yolo_usb.pt format=engine imgsz=640 half=True
 ```
 ###### (c) Run YOLO pipelines
 ```bash
