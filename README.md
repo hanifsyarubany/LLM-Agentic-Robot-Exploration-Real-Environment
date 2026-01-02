@@ -59,16 +59,29 @@ The system is modular: high-level decisions (LLM policy) trigger low-level ROS â
 
 ---
 
-## Repository Notes (Image paths with spaces)
+## Running the Real Robot System
 
-If you reference files with spaces in GitHub Markdown (e.g., `figures/simulated map.png`), you have two clean options:
+#### **1) ArmPi Pro Setup (Arm + Bridge)**
+###### (a) Build catkin workspace
+```bash
+cd armpi_pro
+rm -rf build devel
+catkin_make
+source devel/setup.bash
+```
+###### (b) Start function launcher
+```bash
+roslaunch armpi_pro_bringup start_functions.launch
+```
+###### (c) Start the main ArmPi programs
+Open a new terminal (still on ArmPi) and run:
+```bash
+cd armpi_pro/src/armpi_pro_demo
 
-1) **Rename files** to avoid spaces (recommended):  
-`simulated map.png` â†’ `simulated_map.png`
+# Receives cmd_vel from Jetson and converts it to the ArmPi velocity interface
+python3 cmd_vel_to_velocity.py
 
-2) **URL-encode spaces** as `%20` in Markdown/HTML:  
-`figures/simulated%20map.png`
-
-Example:
-```md
-![map](figures/simulated%20map.png)
+# Arm + gripper control (predefined grasp sequences)
+python3 kinematics_demo.py
+```
+Tip: If you prefer, run these in separate terminals so logs are easier to read.
