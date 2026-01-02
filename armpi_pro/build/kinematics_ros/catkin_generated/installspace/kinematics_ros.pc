@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/armpi_pro/install
+
+Name: kinematics_ros
+Description: Description of kinematics_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
