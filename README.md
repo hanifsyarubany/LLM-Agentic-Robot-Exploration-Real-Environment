@@ -73,15 +73,13 @@ source devel/setup.bash
 ```bash
 roslaunch armpi_pro_bringup start_functions.launch
 ```
-###### (c) Start the main ArmPi programs
-Open a new terminal (still on ArmPi) and run:
+###### (c) Start the main ArmPi programs in separate terminals 
 ```bash
 cd armpi_pro/src/armpi_pro_demo
 
 # Receives cmd_vel from Jetson and converts it to the ArmPi velocity interface
 python3 cmd_vel_to_velocity.py
 
-# Arm + gripper control (predefined grasp sequences)
+# Arm + gripper control (predefined grasp sequences) -> run this in a new terminal
 python3 kinematics_demo.py
 ```
-Tip: If you prefer, run these in separate terminals so logs are easier to read.
