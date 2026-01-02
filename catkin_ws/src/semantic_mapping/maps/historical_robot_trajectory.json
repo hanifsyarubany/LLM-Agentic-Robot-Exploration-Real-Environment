@@ -1,0 +1,29 @@
+[2025-12-16T23:33:28] The robot receives a command from the user: I want to order 2 hamburgers, 1 hot coffee, 2 iced coffee, please grab those on convenience store,, and lastly please bring me 2 pack of medicine on pharmacy
+[2025-12-16T23:33:30] the robot successfully retrieved 1 hamburger.
+[2025-12-16T23:34:42] the robot has stopped at junction 1 (pose: x=-2.065, y=0.044, yaw=-0.090), and it observes: right --- convenience_store; straight --- pickup.
+[2025-12-16T23:34:43] the robot is turning to the right, and then just continue.
+[2025-12-16T23:35:10] the robot has stopped at junction 2 (pose: x=-0.776, y=0.761, yaw=-1.525), and it observes: right --- cafe; straight --- pharmacy.
+[2025-12-16T23:35:11] the robot is turning to the right, and then just continue.
+[2025-12-16T23:35:51] the robot has stopped at junction 3 (pose: x=1.269, y=0.534, yaw=-1.241), and it observes: left --- pickup; right --- hamburger_store.
+[2025-12-16T23:35:52] the robot is turning to the right, and then enter the hamburger_store.
+[2025-12-16T23:37:36] the robot has stopped at junction 4 (pose: x=0.799, y=0.705, yaw=1.549), and it observes: left --- cafe; straight --- convenience_store.
+[2025-12-16T23:37:37] the robot is going straight forward, and then enter the convenience_store.
+[2025-12-16T23:38:53] the robot successfully retrieved 1 hamburger.
+[2025-12-16T23:39:15] the robot successfully retrieved 1 hamburger.
+[2025-12-16T23:39:35] the robot successfully retrieved 1 iced_coffee.
+[2025-12-16T23:40:21] the robot has stopped at junction 5 (pose: x=-1.311, y=0.702, yaw=1.587), and it observes: left --- hamburger_store; right --- pickup.
+[2025-12-16T23:40:21] the robot has stopped at junction 5 (pose: x=-1.311, y=0.702, yaw=1.587), and it observes: left --- hamburger_store; right --- pickup.
+[2025-12-16T23:40:23] the robot is turning to the left, and then just continue.
+[2025-12-16T23:40:24] the robot is turning to the left, and then just continue.
+[2025-12-16T23:35:10] the robot has stopped at junction 2 (pose: x=-0.776, y=0.761, yaw=-1.525), and it observes: right --- cafe; straight --- pharmacy.
+[2025-12-16T23:35:10] the robot has stopped at junction 2 (pose: x=-0.776, y=0.761, yaw=-1.525), and it observes: right --- cafe; straight --- pharmacy.
+[2025-12-16T23:40:56] the robot is going straight forward, and then enter the pharmacy.
+[2025-12-16T23:40:57] the robot is going straight forward, and then just continue.
+[2025-12-16T23:41:48] the robot successfully retrieved 1 iced_coffee.
+[2025-12-16T23:42:10] the robot successfully retrieved 1 hot_coffee.
+[2025-12-16T23:42:34] the robot successfully retrieved 1 medicine.
+[2025-12-16T23:42:58] the robot successfully retrieved 1 medicine.
+[2025-12-16T23:35:51] the robot has stopped at junction 3 (pose: x=1.269, y=0.534, yaw=-1.241), and it observes: left --- pickup; right --- hamburger_store.
+[2025-12-16T23:43:12] the robot is turning to the left, and then enter the pickup.
+[2025-12-16T23:35:51] the robot has stopped at junction 3 (pose: x=1.269, y=0.534, yaw=-1.241), and it observes: left --- pickup; right --- hamburger_store.
+[2025-12-16T23:43:12] the robot is turning to the left, and then enter the pickup.

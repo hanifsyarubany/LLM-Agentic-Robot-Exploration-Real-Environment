@@ -1,0 +1,72 @@
+[
+  {
+    "name": "junction_1",
+    "poi_pairs": [
+      "right --- convenience_store",
+      "straight --- pickup"
+    ],
+    "created_at_unix": 1765895682.090443,
+    "robot_pose_2d": {
+      "x": -2.0651415303677614,
+      "y": 0.04404742525742045,
+      "z": 0.0,
+      "yaw": -0.08951705591661015
+    }
+  },
+  {
+    "name": "junction_2",
+    "poi_pairs": [
+      "right --- cafe",
+      "straight --- pharmacy"
+    ],
+    "created_at_unix": 1765895710.290384,
+    "robot_pose_2d": {
+      "x": -0.7760077385632862,
+      "y": 0.7606615348914413,
+      "z": 0.0,
+      "yaw": -1.524760351747448
+    }
+  },
+  {
+    "name": "junction_3",
+    "poi_pairs": [
+      "left --- pickup",
+      "right --- hamburger_store"
+    ],
+    "created_at_unix": 1765895751.7902908,
+    "robot_pose_2d": {
+      "x": 1.268843421192463,
+      "y": 0.5340763542560437,
+      "z": 0.0,
+      "yaw": -1.241019805833474
+    }
+  },
+  {
+    "name": "junction_4",
+    "poi_pairs": [
+      "left --- cafe",
+      "straight --- convenience_store"
+    ],
+    "created_at_unix": 1765895856.216781,
+    "robot_pose_2d": {
+      "x": 0.7991301406927386,
+      "y": 0.7049782519277747,
+      "z": 0.0,
+      "yaw": 1.5487693237821647
+    }
+  },
+  {
+    "name": "junction_5",
+    "poi_pairs": [
+      "left --- hamburger_store",
+      "right --- pickup"
+    ],
+    "created_at_unix": 1765896021.9904697,
+    "robot_pose_2d": {
+      "x": -1.3109486063455402,
+      "y": 0.7019847570441191,
+      "z": 0.0,
+      "yaw": 1.5865518305612418
+    }
+  }
+]

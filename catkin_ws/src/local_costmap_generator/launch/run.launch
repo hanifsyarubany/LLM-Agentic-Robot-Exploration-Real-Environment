@@ -1,0 +1,21 @@
+<launch>
+
+  <node pkg="nodelet" type="nodelet" name="depth_to_cloud"
+          args="standalone depth_image_proc/point_cloud_xyz">
+      <remap from="image_rect"   to="/camera/depth/image_rect_raw"/>
+      <remap from="camera_info"  to="/camera/depth/camera_info"/>
+      <remap from="points"       to="/camera/depth/points"/>
+    </node>
+
+<!-- Generate local heightmap -->
+  <node pkg="local_costmap_generator" type="heightmap_node" name="heightmap_node" output="screen">
+    <param name="full_clouds" value="true" /> 
+  </node>
+
+  <!-- Local Costmap -->
+  <node pkg="local_costmap_generator" type="heightmap_costmap_node" name="heightmap_costmap_node" output="screen">
+  </node>
+  
+
+
+</launch>

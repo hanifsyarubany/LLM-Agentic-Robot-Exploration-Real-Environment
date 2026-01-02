@@ -1,0 +1,14 @@
+<launch>
+    <!-- APPROACHING AND GRASPING -->
+    <node pkg="robot_controller" type="object_approaching_grasping_enhanced.py" name="object_approaching_grasping_node" output="screen">
+    <param name="min_instance_hits" value="3"/>
+    <param name="min_instance_age" value="0.35"/>
+    <param name="attempt_pose_bin" value="0.05"/>
+    <param name="search_backup_dist" value="1.0"/>
+    <param name="verify_stale_backup_time" value="0.9"/>
+    <param name="target_depth" value="0.24"/>
+    <param name="target_x" value="0.01"/>
+    <param name="x_tolerance" value="0.005"/>
+    <param name="z_tolerance" value="0.01"/>         
+    </node>
+</launch>
