@@ -40,6 +40,34 @@ The system is modular: high-level decisions (LLM policy) trigger low-level ROS �
 
 ---
 
+## Key Features
+
+- **Agentic exploration loop**: explore → map junction semantics → decide next action → execute skills
+- **Semantic mapping**: JSON-like junction graph with direction-to-POI/store relations
+- **LLM navigation policy (constrained output)**: outputs discrete action like `<direction>|||<store_action>`
+- **Modular low-level controllers (ROS topics)**:
+  - local-costmap **wall avoidance**
+  - **AprilTag approach** for precise alignment at signboards/entrances
+  - **store pre-enter / enter** routines (centering + entry)
+  - **grasping trigger** (handoff to pickup/grasp node)
+
+---
+
+## System Overview (High-Level)
+
+**Perception & Mapping**
+- YOLO-based detection for **store icons / arrows / grasp targets** (and optional “negative” samples to reduce false positives)
+- AprilTag detections used as **robust anchors** at junctions/entrances
+- Local occupancy/costmap for safe corridor navigation
+
+**Decision Layer**
+- An LLM (or deterministic policy) selects **left/straight/right** and whether to **enter a store now** vs **continue**
+
+**Execution Layer**
+- A `MainController` FSM gates behaviors so only one module commands `/cmd_vel` at a time.
+
+---
+
 ## Tech Stack
 
 **Core**
