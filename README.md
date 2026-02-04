@@ -141,3 +141,14 @@ source devel/setup.bash
 roslaunch main_simulator main_launcher.launch 
 roslaunch robot_controller main_controller.launch # separate terminal
 ```
+
+---
+
+## Simulation Videos (YouTube)
+
+A short demo video showcasing the end-to-end runtime in Real Environment:
+
+[![LLM-Based Agentic Exploration Demo](figures/youtube_thumbnail.jpg)](https://www.youtube.com/watch?v=hS39ViajA)
+
+- ▶️ Watch on YouTube: https://www.youtube.com/watch?v=hS39ViajA
+
