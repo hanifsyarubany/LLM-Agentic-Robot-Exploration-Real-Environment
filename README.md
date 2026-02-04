@@ -144,6 +144,22 @@ roslaunch robot_controller main_controller.launch # separate terminal
 
 ---
 
+## AprilTag Localization Setup (Required)
+
+This project relies on **AprilTag-based localization** for robust alignment at junctions and store entrances.
+
+Please install and configure **AprilTagLocalization** from the following repository:
+
+🔗 https://github.com/MinSungjae/AprilTagLocalization/tree/master
+
+**Notes:**
+- Follow the repository instructions to install the package in your `catkin_ws`
+- Configure the **AprilTag IDs and their fixed poses** to match the signboard and entrance placements in your Gazebo environment
+- Ensure the published tag frames are consistent with your world/map frame before launching this project
+
+
+---
+
 ## Simulation Videos (YouTube)
 
 A short demo video showcasing the end-to-end runtime in Real Environment:
