@@ -148,7 +148,7 @@ roslaunch robot_controller main_controller.launch # separate terminal
 
 A short demo video showcasing the end-to-end runtime in Real Environment:
 
-[![LLM-Based Agentic Exploration Demo](figures/youtube_thumbnail.jpg)](https://www.youtube.com/watch?v=hS39ViajA)
+[![LLM-Based Agentic Exploration Demo](figures/youtube_thumbnail.png)](https://www.youtube.com/watch?v=v-hS39ViajA)
 
-- ▶️ Watch on YouTube: https://www.youtube.com/watch?v=hS39ViajA
+- ▶️ Watch on YouTube: https://www.youtube.com/watch?v=v-hS39ViajA
 
