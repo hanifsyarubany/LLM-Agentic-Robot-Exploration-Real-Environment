@@ -160,6 +160,19 @@ Please install and configure **AprilTagLocalization** from the following reposit
 - Configure the **AprilTag IDs and their fixed poses** to match the signboard and entrance placements in your Gazebo environment
 - Ensure the published tag frames are consistent with your world/map frame before launching this project
 
+---
+
+## LLM Configuration
+This project uses **GPT-4.1 (2025-04-14)** for high-level decision making. You must configure your API key to run the controller.
+
+1. Navigate to the decision-maker directory:
+   ```bash
+   cd catkin_ws/src/robot_controller/scripts/robot_decision_makers
+   ```
+2. Create `.env` file and add your key:
+   ```plain
+   OPENAI_API_KEY=your_api_key_here
+   ```
 
 ---
 
